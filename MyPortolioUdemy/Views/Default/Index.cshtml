@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+@await Component.InvokeAsync("_HeadComponentPartial")
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    @await Component.InvokeAsync("_NavbarComponentPartial")
+    <!-- home
+    ================================================== -->
+    @await Component.InvokeAsync("_FeatureComponentPartial")
+    <!-- about
+    ================================================== -->
+    @await Component.InvokeAsync("_AboutComponentPartial")
+    <!-- works
+    ================================================== -->
+    @await Component.InvokeAsync("_PortfolioComponentPartial")
+    <!-- end works -->
+    <!-- testimonials
+    ================================================== -->
+    @await Component.InvokeAsync("_TestimonialComponentPartial")
+ <!-- end s-testimonials -->
+    <!-- blog
+    ================================================== -->
+    <!-- end s-blog -->
+    <!-- s-cta
+    ================================================== -->
+    <!-- s-stats  
+    @await Component.InvokeAsync("_StatisticComponentPartial")
+
+    ================================================== -->
+     <!-- end s-stats -->
+    <!-- s-stats
+    ================================================== -->
+    @await Component.InvokeAsync("_ContactComponentPartial")
+    <!-- end s-contact -->
+    <!-- footer
+    ================================================== -->
+    @await Component.InvokeAsync("_FooterComponentPartial")
+   
+</body>
+
+</html>
