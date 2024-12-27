@@ -22,7 +22,7 @@ namespace MyPortolioUdemy.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.About", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.About", b =>
                 {
                     b.Property<int>("AboutId")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Abouts");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Contact", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Contact", b =>
                 {
                     b.Property<int>("ContactId")
                         .ValueGeneratedOnAdd()
@@ -88,7 +88,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Experience", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Experience", b =>
                 {
                     b.Property<int>("ExperienceId")
                         .ValueGeneratedOnAdd()
@@ -117,7 +117,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Experiences");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Feature", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Feature", b =>
                 {
                     b.Property<int>("FeatureId")
                         .ValueGeneratedOnAdd()
@@ -138,7 +138,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Features");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Message", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Message", b =>
                 {
                     b.Property<int>("MessageId")
                         .ValueGeneratedOnAdd()
@@ -173,7 +173,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Messages");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Portfolio", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Portfolio", b =>
                 {
                     b.Property<int>("PortFolioId")
                         .ValueGeneratedOnAdd()
@@ -206,7 +206,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Portfolios");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Skill", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Skill", b =>
                 {
                     b.Property<int>("SkillId")
                         .ValueGeneratedOnAdd()
@@ -226,7 +226,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("Skills");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.SocialMedia", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.SocialMedia", b =>
                 {
                     b.Property<int>("SocialMediaId")
                         .ValueGeneratedOnAdd()
@@ -251,7 +251,7 @@ namespace MyPortolioUdemy.Migrations
                     b.ToTable("SocialMedias");
                 });
 
-            modelBuilder.Entity("MyPortolioUdemy.Controllers.DAL.Entities.Testimonial", b =>
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.Testimonial", b =>
                 {
                     b.Property<int>("TestimonialId")
                         .ValueGeneratedOnAdd()
@@ -278,6 +278,33 @@ namespace MyPortolioUdemy.Migrations
                     b.HasKey("TestimonialId");
 
                     b.ToTable("Testimonials");
+                });
+
+            modelBuilder.Entity("MyPortolioUdemy.DAL.Entities.ToDoList", b =>
+                {
+                    b.Property<int>("ToDoListId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ToDoListId"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ToDoListId");
+
+                    b.ToTable("ToDoLists");
                 });
 #pragma warning restore 612, 618
         }
