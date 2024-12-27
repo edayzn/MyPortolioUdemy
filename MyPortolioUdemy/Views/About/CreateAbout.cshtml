@@ -1,0 +1,40 @@
+﻿@model About
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Hakkımda</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Hakkımda Alanı Ekleme Sayfası</div>
+					</div>
+					<div class="card-body">
+
+						<form method="post">
+							<label>Başlık </label>
+							<input type="text" asp-for="Title" class="form-control" />
+							<br />
+							<label>Açıklama </label>
+							<br />
+							<textarea rows="2" class="form-control" asp-for="SubDescription"></textarea>
+							<br />
+							<label>Detay </label>
+							<br />
+							<textarea rows="4" class="form-control" asp-for="Details"></textarea>
+							<br />
+							<button class="btn btn-primary">Hakkımda Alanı Ekle</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+

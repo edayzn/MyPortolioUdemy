@@ -1,0 +1,50 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "CreateContact";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">İletişim</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">İletişim Bilgileri Ekleme Sayfası</div>
+					</div>
+					<div class="card-body">
+
+						<form method="post">
+							<label>Başlık </label>
+							<input type="text" asp-for="Title" class="form-control" />
+							<br />
+							<label>Açıklama </label>
+							<input type="text" asp-for="Description" class="form-control" />
+							<br />
+							<label>Telefon 1 </label>
+							<input type="text" asp-for="Phone1" class="form-control" />
+							<br />
+							<label>Teleon 2 </label>
+							<input type="text" asp-for="Phone2" class="form-control" />
+							<br />
+							<label>Mail 1 </label>
+							<input type="email" asp-for="Email1" class="form-control" />
+							<br />
+							<label>Mail 2 </label>
+							<input type="email" asp-for="Email2" class="form-control" />
+							<br />
+							<label>Adres </label>
+							<input type="text" asp-for="Address" class="form-control" />
+							<br />
+							<button class="btn btn-primary">İletişim Bilegilerini Ekle</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,55 @@
+﻿@model List<SocialMedia>
+@{
+    ViewData["Title"] = "SocialMediaList";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Sosyal Medya</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Sosyal Medya Sayfası</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Sosyal Medya alanı ile ilgili işlemleri aşağıdaki panelden yapabilirsiniz.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Başlık</th>
+									<th scope="col">Adres</th>
+									<th scope="col">Ikon</th>
+									<th scope="col">Sil</th>
+									<th scope="col">Güncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									<tr>
+										<td>@item.SocialMediaId</td>
+										<td>@item.Title</td>
+										<td>@item.Url</td>
+										<td>@item.Icon</td>
+										<td><a href="/SocialMedia/DeleteSocialMedia/@item.SocialMediaId" class="btn btn-danger">Sil</a></td>
+										<td><a href="/SocialMedia/UpdateSocialMedia/@item.SocialMediaId" class="btn btn-success">Güncelle</a></td>
+									</tr>
+								}
+
+							</tbody>
+						</table>
+						<a href="/SocialMedia/CreateSocialMedia/" class="btn btn-primary">Sosyal Medya Ekle</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
