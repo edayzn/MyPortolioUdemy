@@ -1,0 +1,23 @@
+﻿@model List<Skill>
+<div class="col-md-12">
+	<div class="card">
+		<div class="card-body">
+			<div class="progress-card">
+				@foreach (var item in Model)
+				{
+					<div class="d-flex justify-content-between mb-1">
+
+						<span class="text-muted">@item.Title</span>
+						<span class="text-muted fw-bold">@item.Value</span>
+					</div>
+					<div class="progress mb-2" style="height: 7px;">
+						<div class="progress-bar bg-success" role="progressbar" style="width:@item.Value%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="@item.Value%"></div>
+
+					</div>
+				}
+
+			</div>
+
+		</div>
+	</div>
+</div>

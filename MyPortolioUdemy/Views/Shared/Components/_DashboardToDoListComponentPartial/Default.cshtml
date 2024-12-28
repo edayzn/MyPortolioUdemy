@@ -1,0 +1,46 @@
+﻿@model List<ToDoList>
+
+<div class="col-sm-12 col-md-6 col-xl-4">
+    <div class="h-100 bg-white rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            
+            <h4 class="card-title">Yapılacaklar Listesi</h4>
+            
+        </div>
+        
+        @foreach (var item in Model)
+        { @if (item.Status == true)
+            {
+                <div class="d-flex align-items-center border-bottom py-2">
+                    <input class="form-check-input m-0" type="checkbox">
+                    <div class="w-100 ms-3">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+
+                            <span>@item.Title</span>
+                            <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex align-items-center border-bottom py-2">
+                    <input class="form-check-input m-0" type="checkbox" checked>
+                    <div class="w-100 ms-3">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+
+                            <span><del>@item.Title</del></span>
+                            <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        }
+
+
+
+    </div>
+</div>
