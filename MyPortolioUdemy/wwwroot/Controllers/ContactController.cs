@@ -10,6 +10,7 @@ namespace MyPortolioUdemy.Controllers
 		public IActionResult ContactList()
 		{
 			var value=context.Contacts.ToList();
+
 			return View(value);
 		}
 		public IActionResult CreateContact()

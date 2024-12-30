@@ -7,6 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="wwwroot\Controllers\AboutController.cs" />
+    <Compile Include="wwwroot\Controllers\ContactController.cs" />
+    <Compile Include="wwwroot\Controllers\DashboardController.cs" />
+    <Compile Include="wwwroot\Controllers\DefaultController.cs" />
+    <Compile Include="wwwroot\Controllers\ExperienceController.cs" />
+    <Compile Include="wwwroot\Controllers\FeatureController.cs" />
+    <Compile Include="wwwroot\Controllers\HomeController.cs" />
+    <Compile Include="wwwroot\Controllers\LayoutController.cs" />
+    <Compile Include="wwwroot\Controllers\MessageController.cs" />
+    <Compile Include="wwwroot\Controllers\PortfolioController.cs" />
+    <Compile Include="wwwroot\Controllers\SkillController.cs" />
+    <Compile Include="wwwroot\Controllers\SocialMediaController.cs" />
+    <Compile Include="wwwroot\Controllers\StatisticController.cs" />
+    <Compile Include="wwwroot\Controllers\TestimonialController.cs" />
+    <Compile Include="wwwroot\Controllers\ToDoListController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
   </ItemGroup>
 

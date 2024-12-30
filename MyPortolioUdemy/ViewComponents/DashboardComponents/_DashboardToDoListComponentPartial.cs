@@ -11,19 +11,19 @@ namespace MyPortolioUdemy.ViewComponents.DashboardComponents
             var value=context.ToDoLists.ToList();
             return View(value);
         }
-        public IActionResult ChangeToDoListStatusTrue(int id)
+        public IViewComponentResult ChangeToDoListStatusTrue(int id)
         {
             var value = context.ToDoLists.Find(id);
             value.Status = true;
             context.SaveChanges();
-            return (IActionResult)View(value);
+            return View(value);
         }
-        public IActionResult ChangeToDoListStatusFalse(int id)
+        public IViewComponentResult ChangeToDoListStatusFalse(int id)
         {
             var value = context.ToDoLists.Find(id);
             value.Status = false;
             context.SaveChanges();
-            return (IActionResult)View(value);
+            return View(value);
         }
     }
 }
