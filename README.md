@@ -2,26 +2,18 @@
 
 ## Kullanılan Teknolojiler
   - AspNet Core
-###
-### View Component
-### Model
-### View
-### Controller
-### SQL
-### Context Sınıfı,
-### Migration İşlemleri
-### Paket Yönetimleri
-### Html
-### Css 
-### Bootstrap 
-### Javascript içerikleri
-1. [Giriş](#1giriş)
-   - [Git Nedir](#git-nedir)
-   - [Popüler VSC Sistemler](#popüler-vsc-versiyon-control-system-sistemleri)
-   - [Git'in Kurulumu](#gitin-kurulumu)
-   - [Temel Terminal Komutları](#temel-terminal-komutları)
-   - [Kullanıcı Adı ve Email Tanımlama](#kullanıcı-adı-ve-email-tanımlama)
-     
+  - View Component
+  - Model
+  - View
+  - Controller
+  - SQL
+  - Context Sınıfı
+  - Migration İşlemleri
+  - Paket Yönetimleri
+  - Html
+  - Css
+  - Bootstrap
+  - Javascript 
 
 ![Ekran görüntüsü 2025-01-01 212200](https://github.com/user-attachments/assets/f1156faa-8823-4abd-9225-99a30232c938)
 
