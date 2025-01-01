@@ -1,19 +1,19 @@
-Asp.Net Core ile Porfolio Uygulaması
+# Asp.Net Core ile Porfolio Uygulaması
 
 ## Kullanılan Teknolojiler
 ### AspNet Core
-.View Component
-.Model
-.View
-.Controller
-.SQL
-.Context Sınıfı,
-.Migration İşlemleri
-.Paket Yönetimleri
-.Html
-.Css 
-.Bootstrap 
-.Javascript içerikleri
+### View Component
+### Model
+### View
+### Controller
+### SQL
+### Context Sınıfı,
+### Migration İşlemleri
+### Paket Yönetimleri
+### Html
+### Css 
+### Bootstrap 
+### Javascript içerikleri
 
 
 ![Ekran görüntüsü 2025-01-01 212200](https://github.com/user-attachments/assets/f1156faa-8823-4abd-9225-99a30232c938)
