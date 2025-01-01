@@ -2,7 +2,7 @@
 
 ## Kullanılan Teknolojiler
 
-1.[Kullanılan Teknolojiler]
+1.[Kullanılan Teknolojiler](#kullanılan-teknolojiler)
   -[AspNet Core]
   -[View Component]
 ### AspNet Core
