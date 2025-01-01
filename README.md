@@ -1,6 +1,6 @@
 Asp.Net Core ile Porfolio Uygulaması
 
-Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 .AspNet Core
 .View Component
 .Model
